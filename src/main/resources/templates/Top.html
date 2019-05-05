@@ -1,0 +1,108 @@
+﻿<!DOCTYPE >
+<HTML  xmlns:th="http://www.thymeleaf.org">
+<HEAD id=Head1>
+<TITLE>无标题页</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<STYLE type=text/css> 
+*{
+	FONT-SIZE: 12px; COLOR: white
+}
+#logo {
+	COLOR: white
+}
+#logo A {
+	COLOR: white
+}
+FORM {
+	MARGIN: 0px
+}
+</STYLE>
+<SCRIPT th:href="@{/Top.files/Clock.js}" type=text/javascript></SCRIPT>
+   <!-- <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/jquery.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/jquery.easyui.min.js"></script>
+  <%&#45;&#45;  <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/datagrid-detailview.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/jquery.edatagrid.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/esayui/echarts.min.js"></script>&#45;&#45;%>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/esayui/themes/default/easyui.css">
+   <%&#45;&#45; <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/esayui/themes/IconExtension.css">&#45;&#45;%>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/esayui/themes/icon.css">-->
+<META content="MSHTML 6.00.2900.5848" name=GENERATOR>
+</HEAD>
+<BODY style=" MARGIN: 0px; BACKGROUND-REPEAT: repeat-x">
+
+<form id="form1">
+
+    <DIV style="DISPLAY: block; HEIGHT: 0px"></DIV>
+
+    <DIV style="BACKGROUND-IMAGE: url(Top.files/mail.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 30px">
+        <TABLE cellSpacing=0 cellPadding=0 width="100%">
+            <TBODY>
+            <TR>
+                <TD>
+                    <DIV><IMG th:href="@{/Top.files/nav_pre.gif}" align=absMiddle > 欢迎 <SPAN
+                            id=lblBra>华北电力科学研究所</SPAN> <SPAN id=lblDep>人力资源部</SPAN> [系统管理员 ] 光临
+                    </DIV>
+                </TD>
+                <TD align=right width="70%"><SPAN style="PADDING-RIGHT: 50px">
+                    <A href="javascript:history.go(-1);"><IMG th:src="@{/Top.files/nav_back.gif}" align=absMiddle border=0>后退</A>
+                    <A href="javascript:history.go(1);"><IMG th:src="@{/Top.files/nav_forward.gif}" align=absMiddle border=0>前进</A>
+                    <A th:action="@{index}" target=_top><IMG th:src="@{/Top.files/nav_changePassword.gif}" align=absMiddle border=0>重新登录</A>
+                   <A th:action="@{findById}" ><IMG th:src="@{/Top.files/nav_resetPassword.gif}" align=absMiddle border=0  onclick="addModelMeter()">修改密码</A>
+                   <IMG th:src="@{/Top.files/nav_help.gif}" align=absMiddle border=0>帮助</A>
+                    <IMG th:src="@{/Top.files/menu_seprator.gif}" align=absMiddle>
+                    <SPAN id=clock></SPAN></SPAN>
+                </TD>
+            </TR>
+            </TBODY>
+        </TABLE>
+    </DIV>
+   <SCRIPT type=text/javascript>
+  /*  var clock = new Clock();
+    clock.display(document.getElementById("clock"));
+
+    function addModelMeter(){
+
+        $('#dialogExp').dialog({
+            title:'我的dialog',
+            width: 750,
+            height: 200,
+            cache: false,
+            modal:true,
+            closed:true,
+            buttons:[{
+                text : '取消',
+                handler : function(){
+                    $('#dialogExp').dialog('close');
+                }
+            }],
+        });
+        $('#dialogExp').dialog('open');
+    }
+
+    function searchModel(){
+        if($("#formDetil").val()==""){
+            alert("数据为空！");
+        }else{
+            $('#formDetil').form('submit',{
+                url : '要转发的后台路径',
+                success : function(string) {
+                    if (0==string){
+                        esop.web.pdsmartPopMessage.showMessage("修改失败！");
+                    }else if (1==string){
+                        esop.web.pdsmartPopMessage.showMessage("修改成功！");
+                    }else if(2==string){
+                        esop.web.pdsmartPopMessage.showMessage("请补充完数据！");
+                    }else{
+                        esop.web.pdsmartPopMessage.showMessage("程序异常请刷新页面后重试！");
+                    }
+                }
+            });
+        }
+        $("#formDetil  input").val("");//清空form表单的数据
+    }*/
+
+</SCRIPT>
+</form>
+</BODY>
+</HTML>
